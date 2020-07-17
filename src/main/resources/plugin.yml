@@ -1,0 +1,6 @@
+name: CompassPlus
+version: ${project.version}
+main: me.pinkflameinthepan.compassplus.compassplus.CompassPlus
+api-version: 1.16
+authors: [pinkflameinthepan]
+description: Compass+
