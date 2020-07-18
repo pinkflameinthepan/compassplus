@@ -4,3 +4,8 @@ main: me.pinkflameinthepan.compassplus.compassplus.CompassPlus
 api-version: 1.16
 authors: [pinkflameinthepan]
 description: Compass+
+commands:
+  cplore:
+    description: Set the lore for your compass!
+    usage: /cplore
+    permission: cplus.commands.setCompassLore
