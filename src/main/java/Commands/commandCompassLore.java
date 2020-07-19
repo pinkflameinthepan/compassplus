@@ -24,13 +24,15 @@ public class commandCompassLore implements CommandExecutor {
 
         if(sender instanceof Player){
 
-            String lore = args[0];
-            if(args.length > 1){
-                player.sendMessage(ChatColor.RED + "There is only space for 1 word max!");
-                player.sendMessage(ChatColor.GOLD + "(TIP: you can use underscores (_) to make longer words!)");
+            String lore = "";
+            
+            for (int i = 0; i < args.length; i++) {
+                String arg = args[i] + " ";
+                lore = lore + arg;
             }
+            
             else if(args == null){
-                player.sendMessage(ChatColor.RED + "Please enter your lore after /cplore, using _ instead of spaces!");
+                player.sendMessage(ChatColor.RED + "Please enter your lore after /cplore");
             }
             else{
                 if(player.getInventory().getItemInMainHand().getType() ==  Material.COMPASS){
